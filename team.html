@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="utf-8"/>
+	 <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+     <title>Chicken Sarang</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+ </head>
+ 
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Great+Vibes&family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+ 
+    *{
+	 margin:0;
+	 padding:0;
+	 outline: none;
+	 border: none;
+	 text-decoration: none;
+	 box-sizing: border-box;
+	 font-family:Andale Mono;
+	
+    }
+
+body{
+	 background: url("bg2.jpg")no-repeat center/cover; height: 100vh;
+	  background-attachment: fixed;
+}
+
+
+nav ul{
+	 margin-top: 100px;
+}
+
+nav{
+	 top:0;
+	 position: absolute;
+	 height: 100vh;
+	 left: 0;
+	 background: #fff;
+	 width: 90px;
+	 overflow: hidden;
+	 transition: width 0.2s linear;
+	 box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+	 opacity:.8;
+}
+
+.active
+{
+	 color:#660000;
+}
+
+a{
+	 position: relative;
+	 color: rgb(85,83,83);
+	 font-size: 14px;
+	 display: inline-table;
+	 width: 300px;
+	 padding: 10px;
+}
+
+.fa{
+	 position:relative;
+	 width: 80px;
+	 height: 50px;
+	 font-size: 20px;
+	 text-align: center;
+}
+.nav-item{
+	 position: relative;
+	 margin-left: 20px;
+}
+
+a:hover{
+	 color: #660000;
+	
+}
+nav:hover{
+	 width: 200px;
+	 transition: all 0.5s ease;
+}
+
+
+.container{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin-top:150px; 
+	margin-left:140px;
+   
+}
+
+.container .box{
+	position: relative;
+	width: calc(350px - 30px);
+	height: calc(500px - 30px);
+	background: #000;
+	margin:10px;
+	float:left;
+	margin-left:70px;;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+
+.container .box .content{
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 100px);
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	opacity: 0;
+	
+}
+
+.container .box:hover .content{
+    top: 350px;
+    opacity: 1;		
+}
+
+.container .box .content h1{
+	margin: 0 0 10px;
+	padding: 0;
+	color: #fff;
+	font-size: 24px;
+    background-color:#660000;
+	opacity:.8;
+}
+
+footer{ 
+     margin-top:500px;
+     background-color:#4d2600;
+	 padding: 1rem;
+	 text-align: center;
+	 color:white;
+	 opacity:.9;
+	 margin-bottom:0;
+}
+
+</style>
+    
+ <body>
+     
+	  <nav>
+	        <ul> 
+		      <li>
+			     <a href="Portfolio 1.html">
+				     <i class="fa fa-house"></i>
+				     <span class="nav-item">Home</span>
+				 </a>
+			  </li>
+			  
+		      <li>
+			     <a href="about.html" >
+				     <i class="fa fa-book-open"></i>
+				     <span class="nav-item">About Us</span>
+				 </a>
+			  </li>
+			  
+		      <li>
+			     <a href="menu.html" >
+				     <i class="fa fa-drumstick-bite"></i>
+					 <span class="nav-item">Menu</span>
+				  </a>
+			  </li> 
+			  
+			  <li>
+			     <a href="team.html" class="active">
+				     <i class="fa fa-people-group"></i>
+					 <span class="nav-item">Our Team</span>
+				  </a>
+			  </li>
+
+              <li>
+			     <a href="contact.html">
+				     <i class="fa fa-address-book"></i>
+					 <span class="nav-item">Contact Us</span>
+				  </a>
+			  </li> 			  
+		   </ul>
+	  </nav>
+	  
+	  <div class="container">
+            <div class="box" style="background:url('t2.jpg')no-repeat center/cover;">
+			   <div class="content">
+	               <h1>Founder</h1>
+		       </div> 
+		    </div>	 
+			
+			 <div class="box" style="background:url('t1.jpg')no-repeat center/cover;">
+			   <div class="content">
+	               <h1>Assistant Manager</h1>
+		       </div> 
+		    </div>	 
+			
+			 <div class="box" style="background:url('t3.jpg')no-repeat center/cover;">
+			   <div class="content">
+	               <h1>Marketing & Delivery</h1>
+		       </div> 
+		    </div>	 
+			
+		</div>
+		
+		<footer>
+	     &copy; Est. 2019 Chicken Sarang
+	  </footer>
+	  
+</body>
+</html>

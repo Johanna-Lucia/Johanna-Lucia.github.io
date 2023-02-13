@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="utf-8"/>
+	 <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+     <title>Chicken Sarang</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+ </head>
+ 
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Great+Vibes&family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+ 
+    *{
+	 margin:0;
+	 padding:0;
+	 outline: none;
+	 border: none;
+	 text-decoration: none;
+	 box-sizing: border-box;
+	 font-family:Andale Mono;
+	
+    }
+
+body{
+	 background: url("background.jpg")no-repeat center/cover; height: 100vh;
+	  background-attachment: fixed;
+}
+
+
+nav ul{
+	 margin-top: 100px;
+}
+
+nav{
+	 top:0;
+	 position: absolute;
+	 height: 100vh;
+	 left: 0;
+	 background: #fff;
+	 width: 90px;
+	 overflow: hidden;
+	 transition: width 0.2s linear;
+	 box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+	 opacity:.8;
+}
+
+.active
+{
+	 color:#660000;
+}
+
+a{
+	 position: relative;
+	 color: rgb(85,83,83);
+	 font-size: 14px;
+	 display: inline-table;
+	 width: 300px;
+	 padding: 10px;
+}
+
+.fa{
+	 position:relative;
+	 width: 80px;
+	 height: 50px;
+	 font-size: 20px;
+	 text-align: center;
+}
+.nav-item{
+	 position: relative;
+	 margin-left: 20px;
+}
+
+a:hover{
+	 color: #660000;
+	
+}
+nav:hover{
+	 width: 200px;
+	 transition: all 0.5s ease;
+}
+
+.grid-container {
+     display: grid;
+     grid-template-columns: auto auto;
+	 grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
+     gap:5px;
+     padding: 5px;
+}
+
+.grid-container img{
+	 position:absolute;
+	 margin-left:250px;
+	 margin-top:100px;
+	 border-radius:9px;
+}
+
+.grid-container h1{
+     position:absolute;
+	 margin-left:200px;
+	 margin-top:150px;
+	 text-align: center;
+	 font-family: 'DM Serif Display', serif;
+	 color: white;
+	 font-size: 40px;
+	 text-shadow:4px 0 3px   #1a0000, 3px 0 4px #ffcc66;
+	 background-color:#330000;
+	 opacity:.9;
+	 border-radius:10px;
+
+}
+
+footer{ 
+     background-color:#4d2600;
+	 padding: 1rem;
+	 text-align: center;
+	 color:white;
+	 opacity:.9;
+}
+ </style>
+    
+ <body>
+     
+	  <nav>
+	        <ul> 
+		      <li>
+			     <a href="Portfolio 1.html">
+				     <i class="fa fa-house"></i>
+				     <span class="nav-item">Home</span>
+				 </a>
+			  </li>
+			  
+		      <li>
+			     <a href="about.html" >
+				     <i class="fa fa-book-open"></i>
+				     <span class="nav-item">About Us</span>
+				 </a>
+			  </li>
+			  
+		      <li>
+			     <a href="menu.html" class="active">
+				     <i class="fa fa-drumstick-bite"></i>
+					 <span class="nav-item">Menu</span>
+				  </a>
+			  </li> 
+			  
+			  <li>
+			     <a href="team.html">
+				     <i class="fa fa-people-group"></i>
+					 <span class="nav-item">Our Team</span>
+				  </a>
+			  </li>
+
+              <li>
+			     <a href="contact.html">
+				     <i class="fa fa-address-book"></i>
+					 <span class="nav-item">Contact Us</span>
+				  </a>
+			  </li> 			  
+		   </ul>
+	  </nav>
+	  
+	  <div class="grid-container">
+           <div><img src="1.jpg" style="width:420px;height:350px;"/></div>
+		   <div><h1>320Php<br>Chicken Sarang</h1></div>
+           <div><img src="2.jpg" style="width:420px;height:350px;"/></div>
+		   <div><h1>180Php<br>Jeyuk Bokkeum<br>(Spicy Pork Bulgogi)</h1></div>
+           <div><img src="3.jpg" style="width:420px;height:350px;"/></div>
+           <div><h1>180Php<br>Tangsuyuk<br>(Sweet & Sour Pork)</h1></div>
+            <div><img src="4.jpg" style="width:420px;height:350px;"/></div>
+		   <div><h1>180Php<br>Donkaessu<br>(3pcs)</h1></div>
+           <div><img src="5.jpg" style="width:420px;height:350px;"/></div>
+		   <div><h1>75Php<br>Donkaessu Meal<br>(1pc donkaessu<br>with rice)</h1></div>
+           <div><img src="6.jpg" style="width:420px;height:350px;"/></div>
+           <div><h1>75Php<br>Tangsuyuk Meal<br>(Sweet & Sour Pork<br>with rice)</h1></div> 	
+           <div><img src="7.jpg" style="width:420px;height:350px;"/></div>
+		   <div><h1>75Php<br>Chicken Sarang Meal<br>(1pc Chicken Sarang<br>with rice)</h1></div>
+           <div><img src="8.jpg" style="width:420px;height:350px;"/></div>
+           <div><h1>75Php<br>Jeyuk Bokkeum Meal</h1></div> 		   
+       </div>
+	   
+	   <footer>
+	     &copy; Est. 2019 Chicken Sarang
+	  </footer>
+</body>
+</html>
