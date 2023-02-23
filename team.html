@@ -9,7 +9,7 @@
  </head>
  
  <style>
- @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Great+Vibes&family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Great+Vibes&family=Mynerve&family=Noto+Sans+KR:wght@500&family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@200&family=Tourney:wght@900&display=swap');
  
     *{
 	 margin:0;
@@ -80,58 +80,78 @@ nav:hover{
 	 transition: all 0.5s ease;
 }
 
-
-.container{
-	position: relative;
-	width: 1200px;
-	height: 300px;
-	margin-top:150px; 
-	margin-left:140px;
-   
+.container table{
+     margin-top:250px;
+	 margin-left:30px;
+	 margin-right:5px;
+	 justify-content:center;
 }
 
-.container .box{
-	position: relative;
-	width: calc(350px - 30px);
-	height: calc(500px - 30px);
-	background: #000;
-	margin:10px;
-	float:left;
-	margin-left:70px;;
-	box-sizing: border-box;
-	overflow: hidden;
-	border-radius: 10px;
+#box{
+     background-color:#4d2600;
+	 opacity:.8;
+	 border-radius:20px;
+}
+
+#box:hover{
+     background-color:#4d2600;
+	 opacity:1;
+	 transition:ease .5s;
+	 cellspacing:0;
+	 cellpadding:0;
 }
 
 
-.container .box .content{
-	position: absolute;
-	top: 100%;
-	height: calc(100% - 100px);
-	text-align: center;
-	padding: 20px;
-	box-sizing: border-box;
-	transition: 0.5s;
-	opacity: 0;
-	
+
+h1{  
+     position:absolute;
+     margin-top: 30px;
+	 margin-left: 145px;
+	 font-family: 'DM Serif Display', serif;
+	 color: white;
+	 font-size: 40px;
+	 text-shadow: 2px 0 3px  #1a1100, 3px 0 5px #ffcc66;
+	 background-color:#4d2600;
+	 opacity:.8;
+	 border-radius:20px;
 }
 
-.container .box:hover .content{
-    top: 350px;
-    opacity: 1;		
+h3{
+     position:absolute;
+     margin-top: 80px;
+	 margin-left: 150px;
+     color:white;
+     text-shadow: 2px 0 3px  #1a1100, 3px 0 5px #ffcc66;
+	 font-family: 'Poppins', sans-serif;
+
+
 }
 
-.container .box .content h1{
-	margin: 0 0 10px;
-	padding: 0;
-	color: #fff;
-	font-size: 24px;
-    background-color:#660000;
-	opacity:.8;
+
+.container img{
+     width:250px;
+	 height:250px;
+	 margin-top:20px;
+	 margin-left:10px;
+	 float:left;
 }
+
+
+p{
+     margin-top:20px;
+	 margin-left:20px;
+     color:white;
+	 font-family: 'Poppins', sans-serif;
+	 font-weight:900;
+	 font-size:18px;
+	 padding:1rem;
+}
+
+
 
 footer{ 
-     margin-top:500px;
+     position:relative;
+     margin-top:200px;
      background-color:#4d2600;
 	 padding: 1rem;
 	 text-align: center;
@@ -163,14 +183,14 @@ footer{
 		      <li>
 			     <a href="menu.html" >
 				     <i class="fa fa-drumstick-bite"></i>
-					 <span class="nav-item">Menu</span>
+					 <span class="nav-item">Products</span>
 				  </a>
 			  </li> 
 			  
 			  <li>
 			     <a href="team.html" class="active">
 				     <i class="fa fa-people-group"></i>
-					 <span class="nav-item">Our Team</span>
+					 <span class="nav-item">Partners</span>
 				  </a>
 			  </li>
 
@@ -183,30 +203,83 @@ footer{
 		   </ul>
 	  </nav>
 	  
-	  <div class="container">
-            <div class="box" style="background:url('t2.jpg')no-repeat center/cover;">
-			   <div class="content">
-	               <h1>Founder</h1>
-		       </div> 
-		    </div>	 
-			
-			 <div class="box" style="background:url('t1.jpg')no-repeat center/cover;">
-			   <div class="content">
-	               <h1>Assistant Manager</h1>
-		       </div> 
-		    </div>	 
-			
-			 <div class="box" style="background:url('t3.jpg')no-repeat center/cover;">
-			   <div class="content">
-	               <h1>Marketing & Delivery</h1>
-		       </div> 
-		    </div>	 
-			
-		</div>
-		
+	     <div class="partners">
+             <h1> Partners</h1>
+         </div>			 
+		 <pre>
+         <em><h3>
+		 We believe in developing our communities and environment by partnering with organizations focused on
+		 a community purpose. For every time that you invest in one of our products, a percentage goes to our
+		 partners, to help them fulfill that purpose.Every step we take is a step taken together with our 
+		 partners in bettering that community.</h3></em>
+		 </pre> 
+		 
+	 <div class="container">
+		  <table align="center" cellspacing="80" cellpadding="100">
+			 
+		     <tr align="center" >
+			     <td >
+			         <a href="https://www.gk1world.com/our-journey"><img src="GKlogo.png" style="border-radius:10px"/></a>
+			      </td>
+			      <td id="box">
+			        <p>
+		                 Their mission is simple, “Ending poverty for 5 million families by 2024”. A straightforward line that
+		                 speaks a thousand depths. Behind it is the complexity of how to tackle such a big commitment. But 
+		                 Gawad Kalinga also has a straightforward and simple answer: a desire to give care and leave no one 
+		                 behind. Along with it is their journey, their experiences and learnings that they have gained, starting
+		                 from a simple desire to implementing projects that are slowly making their mission a reality. Visit Gawad
+				         Kalinga and learn more insightful definitions of the values they stand for. It also provides information
+				         on how you, and everyone who shares the same interest, can join in their cause. And, finally find yourself
+				         volunteering in the Philippines. 
+                      </p>
+		      
+			       </td>
+		      </tr>
+			  
+			  <tr align="center" >
+			     <td>
+			         <a href="https://www.ivolunteer.com.ph/"><img src="IVlogo.png"/></a>
+			      </td>
+			      <td id="box">
+			         <p>
+		                 Ivolunteer is a portal made by volunteers for volunteers. Propelled by the mission of promoting volunteerism
+						 by making it known, making it easy and making it happen, it serves as a bridge between the volunteers and the 
+						 organisations seeking volunteers. Are you someone looking to put your time and effort into a good cause in 
+						 either long-term or short-term projects? Visit Ivolunteer to give you more information on how you can sign 
+						 up as a volunteer and choose from the many projects they offer.
+                      </p>
+		      
+			       </td>
+		      </tr>
+			  
+			  
+			  <tr align="center" >
+			     <td>
+			         <a href="https://haribon.org.ph/2012-07-16-13-57-46/be-an-eco-volunteer"><img src="HFlogo.png"/></a>
+			      </td>
+			      <td id="box">
+			         <p>
+		                 Haribon is a combination of two Filipino words that best describe the mighty Philippine Eagle, “Haring Ibon”, 
+						 which translates to “King of Birds”. It is also the name of the foundation which pioneered environmental organisation.
+                         Haribon Foundation believes in the role of people in taking care of the environment. Thus, it strives to continually
+						 promote community empowerment coupled with scientific excellence for nature conservation. An avid nature lover? Visit 
+						 Haribon to know more about how you can become one of their volunteers.
+                      </p>
+		      
+			       </td>
+		      </tr>
+		 
+		  </table>
+		      
+			  
+		     
+		 
+	  </div>
+	  
 		<footer>
-	     &copy; Est. 2019 Chicken Sarang
-	  </footer>
+	      &copy; Est. 2019 Chicken Sarang
+	    </footer>
+		
 	  
 </body>
 </html>

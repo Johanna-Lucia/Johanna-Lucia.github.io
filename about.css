@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Great+Vibes&family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Great+Vibes&family=Mynerve&family=Noto+Sans+KR:wght@400&family=Playfair+Display:ital,wght@1,400;1,600&family=Tourney:wght@900&display=swap');
 
 
 *{
@@ -84,7 +84,118 @@ section{
 	 margin-top:700px;
 	 margin-left:0;
 	 height:100vh;
+	 justify-items:center;
 }
+
+.history h1{
+	 position:relative;
+	 margin-top:800px;
+	 margin-left:0;
+	 height:8%;
+	 width: 100%;
+	 background-color:#4d2600;
+	 opacity:.8;
+	 text-align:center;
+}
+
+.story{
+	 background: url("sbg3.jpg")no-repeat center/cover;
+	 margin:150px;
+	 border-radius:20px;
+	 height:800px;
+	 opacity:.9;
+	 box-shadow:#4d2600 10px;
+
+}
+.story p{
+	
+	 position:absolute;
+	 margin:100px;
+	 margin-left:0px;
+	 margin-top:100px;
+	 margin-right:320px;
+	 text-align:center;
+	 color:black;
+	 text-shadow: none;
+	 font-family: 'Noto Sans KR', sans-serif;
+	 padding:1rem;
+	 text-align:center;
+	 
+}
+
+.team h1{
+	 position:relative;
+	 margin-top:300px;
+	 margin-left:0;
+	 height:8%;
+	 width: 100%;
+	 background-color:#4d2600;
+	 opacity:.8;
+	 text-align:center;
+}
+
+.container{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin-top:300px; 
+	margin-left:70px;
+   
+}
+
+.container .box{
+	position: relative;
+	width: calc(350px - 30px);
+	height: calc(500px - 30px);
+	background: #000;
+	margin:10px;
+	float:left;
+	margin-left:70px;;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.container .box .content{
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 100px);
+	width:100%;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	opacity: 0;
+	background-color:#4d2600;
+	opacity:.8;
+}
+
+.container .box:hover .content{
+    top: 350px;
+   	
+}
+
+.container .box .content h1{
+	margin: 0 0 10px;
+	padding: 0;
+	color: white;
+	font-size: 24px;
+	opacity: 1;
+	text-shadow:none;
+	
+	
+}
+
+.container .box .content p{
+	margin-top:40px;
+	padding: 0;
+	color: white;
+	font-size: 24px;
+	opacity: 1;
+	text-shadow:none;
+	
+}
+
 .review h1{
 	 position:relative;
 	 margin-top:700px;

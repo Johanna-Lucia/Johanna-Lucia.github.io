@@ -9,18 +9,9 @@
  </head>
  
  <style>
- @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Great+Vibes&family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
- 
-    *{
-	 margin:0;
-	 padding:0;
-	 outline: none;
-	 border: none;
-	 text-decoration: none;
-	 box-sizing: border-box;
-	 font-family:Andale Mono;
-	
-    }
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Great+Vibes&family=Mynerve&family=Noto+Sans+KR:wght@500&family=Playfair+Display:ital,wght@1,400;1,600&family=Tourney:wght@900&display=swap');
+
+
 
 body{
 	 background: url("background.jpg")no-repeat center/cover; height: 100vh;
@@ -29,7 +20,14 @@ body{
 
 
 nav ul{
-	 margin-top: 100px;
+	 margin-top:100px;
+	 margin:0;
+	 padding:0;
+	 outline: none;
+	 border: none;
+	 text-decoration: none;
+	 box-sizing: border-box;
+	 font-family:Andale Mono;
 }
 
 nav{
@@ -43,6 +41,7 @@ nav{
 	 transition: width 0.2s linear;
 	 box-shadow: 0 20px 35px rgba(0,0,0,0.1);
 	 opacity:.8;
+	
 }
 
 .active
@@ -57,6 +56,8 @@ a{
 	 display: inline-table;
 	 width: 300px;
 	 padding: 10px;
+	 text-decoration: none;
+	  margin-top:50px;
 }
 
 .fa{
@@ -80,34 +81,73 @@ nav:hover{
 	 transition: all 0.5s ease;
 }
 
-.grid-container {
-     display: grid;
-     grid-template-columns: auto auto;
-	 grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
-     gap:5px;
-     padding: 5px;
+.container{
+     height:2500px;
+
+
+
 }
 
-.grid-container img{
-	 position:absolute;
-	 margin-left:250px;
-	 margin-top:100px;
-	 border-radius:9px;
-}
-
-.grid-container h1{
-     position:absolute;
-	 margin-left:200px;
-	 margin-top:150px;
-	 text-align: center;
+h1{  
+     position:relative;
+     margin-top: 30px;
+	 margin-left: 180px;
 	 font-family: 'DM Serif Display', serif;
 	 color: white;
-	 font-size: 40px;
-	 text-shadow:4px 0 3px   #1a0000, 3px 0 4px #ffcc66;
-	 background-color:#330000;
+	 font-size: 45px;
+	 text-shadow: 2px 0 3px  #1a1100, 3px 0 5px #ffcc66;
+	 background-color:#4d2600;
 	 opacity:.9;
-	 border-radius:10px;
+	 border-radius:35px;
+	 text-align:center;
+} 
 
+table
+{
+     margin-top:50px;
+	 font-family: 'Noto Sans KR', sans-serif;
+	 align-items:center;
+}
+ 
+img:hover{
+     position:relative;
+     margin-top:-100px;
+     transition:ease 0.5s;
+	 width:400px;
+	 height:450px;
+}
+
+#box
+{
+     background-color:white; 
+	 border-radius:10px;
+	 margin-top:50px;
+}
+
+#box:hover
+{
+     background-color:#e6ffff; 
+	 position:relative;
+     margin-top:-100px;
+}
+
+img
+{
+     border-radius:10px;
+	 margin:10px;
+}
+
+h3
+{
+     font-family: 'Mynerve', cursive;
+	 font-size:25px;
+}
+
+p
+{
+     font-family: 'Tourney', cursive;
+	 color:#660000;
+	 font-size:18px;
 }
 
 footer{ 
@@ -140,14 +180,14 @@ footer{
 		      <li>
 			     <a href="menu.html" class="active">
 				     <i class="fa fa-drumstick-bite"></i>
-					 <span class="nav-item">Menu</span>
+					 <span class="nav-item">Products</span>
 				  </a>
 			  </li> 
 			  
 			  <li>
 			     <a href="team.html">
 				     <i class="fa fa-people-group"></i>
-					 <span class="nav-item">Our Team</span>
+					 <span class="nav-item">Partners</span>
 				  </a>
 			  </li>
 
@@ -160,23 +200,67 @@ footer{
 		   </ul>
 	  </nav>
 	  
-	  <div class="grid-container">
-           <div><img src="1.jpg" style="width:420px;height:350px;"/></div>
-		   <div><h1>320Php<br>Chicken Sarang</h1></div>
-           <div><img src="2.jpg" style="width:420px;height:350px;"/></div>
-		   <div><h1>180Php<br>Jeyuk Bokkeum<br>(Spicy Pork Bulgogi)</h1></div>
-           <div><img src="3.jpg" style="width:420px;height:350px;"/></div>
-           <div><h1>180Php<br>Tangsuyuk<br>(Sweet & Sour Pork)</h1></div>
-            <div><img src="4.jpg" style="width:420px;height:350px;"/></div>
-		   <div><h1>180Php<br>Donkaessu<br>(3pcs)</h1></div>
-           <div><img src="5.jpg" style="width:420px;height:350px;"/></div>
-		   <div><h1>75Php<br>Donkaessu Meal<br>(1pc donkaessu<br>with rice)</h1></div>
-           <div><img src="6.jpg" style="width:420px;height:350px;"/></div>
-           <div><h1>75Php<br>Tangsuyuk Meal<br>(Sweet & Sour Pork<br>with rice)</h1></div> 	
-           <div><img src="7.jpg" style="width:420px;height:350px;"/></div>
-		   <div><h1>75Php<br>Chicken Sarang Meal<br>(1pc Chicken Sarang<br>with rice)</h1></div>
-           <div><img src="8.jpg" style="width:420px;height:350px;"/></div>
-           <div><h1>75Php<br>Jeyuk Bokkeum Meal</h1></div> 		   
+	  <h1>Our Products</h1>
+	  
+	  <div class="container">
+	  
+	  
+		 
+         <table align="center" cellspacing="30" cellpadding="10">
+			 
+		     <tr align="center" >
+			     <td id="box">
+			         <img src="1.jpg" width="300" height="350px"/><br><br>
+					 <h3>Chicken Sarang</h3>
+				      <p>320Php</p>
+			      </td>
+			      <td id="box">
+			         <img src="2.jpg" width="300" height="350px"/><br>
+					 <h3>Jeyuk Bokkeum<br>(Spicy Pork Bulgogi)</h3>
+				     <p>180Php</p>
+			       </td>
+		      </tr>
+		  
+		      <tr align="center"> 
+			      <td id="box">
+			          <img src="3.jpg" width="300" height="350px"/><br>
+				     <h3>Tangsuyuk<br>(Sweet & Sour Pork)</h3>
+				      <p>180Php</p>
+			      </td>
+			     <td id="box">
+			         <img src="4.jpg" width="300" height="350px"/><br>
+				     <h3>Donkaessu<br>(3pcs)</h3>
+				     <p>180Php</p>
+			      </td>
+	          </tr>
+		 
+		      <tr align="center">
+		     
+			       <td id="box">
+			         <img src="5.jpg" width="300" height="350px"/><br>
+				     <h3>Donkaessu Meal<br>(1pc donkaessu with rice)</h3>
+				     <p>75Php</p>
+			       </td>
+			       <td id="box">
+			          <img src="6.jpg" width="300" height="350px"/><br>
+				      <h3>Tangsuyuk Meal<br>(Sweet & Sour Pork with rice)</h3>
+				      <p>75Php</p>
+			      </td>
+		      </tr>
+		      <tr align="center">
+			     <td id="box"><br>
+			         <img src="7.jpg" width="300" height="350px"/><br>
+				     <h3>Chicken Sarang Meal<br>(1pc Chicken Sarang with rice)</h3>
+				     <p>75Php</p>
+			      </td>
+			     <td id="box">
+			         <img src="8.jpg" width="300" height="350px"/><br>
+				     <h3>Jeyuk Bokkeum Meal</h3>
+				     <p>75Php<br></p>
+			      </td>
+	          </tr>
+	     </table>
+          
        </div>
 	   
 	   <footer>
